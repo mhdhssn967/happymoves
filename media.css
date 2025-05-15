@@ -2,7 +2,7 @@
     /* Your mobile styles go here */
 body{
     background-color: rgb(23, 17, 26);
-    width: 95vw;
+    width: 90vw;
     overflow-x: hidden;
 }
 .logoimg{
@@ -120,6 +120,7 @@ body{
 }
 .bentcont{
     font-size: 12px;
+    text-align: justify;
     padding: 0%;
 }
 .cont{
