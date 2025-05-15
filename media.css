@@ -416,12 +416,13 @@
 
     .footer {
         padding: 1%;
-        /* display: none; */
+        display: none;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100vw;
         overflow: hidden;
+        background: none;
     }
 
     .footertxt {
@@ -432,7 +433,6 @@
 
     .footerlist {
         list-style: none;
-        ;
     }
 
     .footerlink {
