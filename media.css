@@ -60,9 +60,20 @@ body{
    width: 50px !important;
    padding: 10px;
 }
+.companies{
+    width: fit-content;
+    padding: 0%;
+    width: 90vw;
+    overflow-x: hidden !important;
+}
+.companies div{
+    padding: 0px;
+}
 .companylogos{
     display: flex;
     flex-wrap: wrap;
+    /* gap: 10px; */
+
 }
 
 .bento{
@@ -360,10 +371,12 @@ input{
 }
 .footer{
     padding: 1%;
-    display: none;
+    /* display: none; */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    overflow: hidden;
 }
 .footertxt{
     display: flex;
@@ -388,6 +401,7 @@ input{
 }
 .container{
     width: 100vw;
+    overflow-x: hidden;
 }
 
 }

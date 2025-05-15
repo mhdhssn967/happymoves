@@ -2,6 +2,9 @@
     margin: 0px;
     font-family: "Inter", sans-serif;
 }
+* {
+  outline: 1px solid red;
+}
 nav .joinbutton1 a{
     text-decoration: none;
     color: rgb(163, 163, 163);
@@ -230,7 +233,7 @@ nav div{
 
 .companytext{
     color: rgb(221, 219, 219);
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     margin-top: 3%;
 }
 .companies{
