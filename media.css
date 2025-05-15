@@ -1,0 +1,384 @@
+@media only screen and (max-width: 768px) {
+    /* Your mobile styles go here */
+body{
+    background-color: rgb(23, 17, 26);
+    width: 100vw;
+    overflow-x: hidden;
+}
+.logoimg{
+    width: 30px;
+}
+
+.badge{
+    height: 20px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+}
+*{
+    font-size: 12px;
+}
+.video-frame iframe{
+    width: 90vw;
+    height: 600px;
+}
+
+.newbadge img{
+    width: 20px;
+}
+.badgetext{
+    color: #ffffff;
+    text-wrap: nowrap;
+    font-weight: 500;
+    font-size: 12px;
+    /* margin-left: 4%; */
+}
+.herohead{
+    font-size:40px;
+}
+.heropara{
+    margin: 1% 5%;
+    font-size: 14px;
+}
+.herobuttonlink{
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    display: inline-block;
+    border-radius: 8px;
+    background-color: white;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+
+.heroimg{
+    width: 85vw;
+}
+
+.logocomp{
+   width: 50px !important;
+   padding: 10px;
+}
+.companylogos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bento{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.bentopara{
+    font-size: 16px;
+}
+.bento1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0%;
+    margin-left: 1%;
+}
+.bento2img{
+    margin-left: 1%;
+    /* box-shadow: inset 0px 0px 100px 10px #602A9A; */
+}
+.bento1img, .bento4img{
+    font-size: 10px;
+    padding: 0px;
+}
+.bento1img img,.bento4img img{
+    width: 250px;
+}
+
+
+
+.bentoimg1txt{
+    font-size: 12px;
+}
+.bentoimg1head{
+    color: white;
+    font-weight: 300;
+    text-align: left;
+    letter-spacing: 1.5px;
+    margin-bottom: 3%;
+    margin-top: 10%;
+}
+
+.bento2img{
+    width: 90vw;
+    height: 150px;
+    transition: 0.3s;
+    
+    /* box-shadow: 0px -80px 1000px 1px #602A9A; */
+}
+.benthead{
+    color: white;
+    font-weight: 300;
+    font-size: 15px;
+}
+.bentcont{
+    font-size: 12px;
+    padding: 0%;
+}
+.cont{
+    height: fit-content;
+    margin: 3%;
+}
+
+.right{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.bento3img{
+    width: 90vw;
+    height: fit-content;
+    margin-left: 1%;
+}
+
+
+/*  */
+.features{
+    justify-self: center;
+    width: 100vw;
+    height: fit-content;
+    text-align: center;
+    border: none;
+    background: none;
+}
+
+.featureshead{
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin:3% 3%;
+    letter-spacing: 1.5px;
+}
+.featureicon{
+    margin-bottom: -1%;
+}
+.featuresbodyhead{
+    color: white;
+    font-weight: 400;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 2%;
+}
+.featuresbodytext{
+    color: white;
+    font-weight: 200;
+    font-size: 14px;
+    margin-top: 5%;
+}
+.featuresbody{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+    margin-left: 2%;
+    gap: 30px;
+}
+.clients{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headingsmain{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+.contmain{
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+    text-align: center;
+    margin-top: 3%;
+}
+.review{
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    /* border-top: solid rgba(134, 101, 145, 0.651) 0.5px; */
+    border-bottom: solid rgba(134, 101, 145, 0.651) 0.5px;
+    width: 88vw;
+    padding: 2%;
+}
+.reviewtext{
+    color: white;
+    font-size: 12px;
+    font-weight: 200;
+}
+.revimg img{
+    width: 50px;
+}
+.revimg{
+    display: flex;
+    align-items: center;
+}
+
+
+.username{
+    font-size: 10px;
+}
+.design{
+    font-size: 10px;
+}
+.pricing{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contmain2{
+    font-size: 12px;
+    width: 80vw;
+}
+.cardhead{
+    font-size: 20px;
+}
+.price{
+    color: white;
+    font-size: 12px;
+}
+
+.lifetime:hover{
+    transform: scale(1.2) !important;
+}
+.details{
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.packagebutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.packages{
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55%;
+    gap: 30px;
+}
+
+.cta{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-bottom: 2%;
+}
+.cta-info{
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    margin-top: 5px;
+    gap: 5%;
+}
+
+
+.cta{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+.ctahead{
+    font-size: 26px;
+}
+.inputcta{
+    width: fit-content;
+    margin-left: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+input{
+    margin-top: 8%;
+    background-color: transparent;
+    border-width: 0.5px;
+    border: solid 1px white;
+    border-radius: 10px 0px 0px 10px;
+    height: 15px;
+    width: 150px;
+    padding: 2%;
+    color: white;
+}
+.waitlistbutton{
+    color: #020103;
+    background-color: white;
+    padding: 3% 2%;
+    border: none;
+    font-size: 10px;
+}
+.waitlistbutton{
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 5px;
+    display: inline-block;
+    margin-top: 0%;
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 8%;
+}
+
+.footerlogo{
+    color: white;
+    align-items: center;
+    display: flex;
+    margin-left: 10%;
+    width: 400px;
+}
+.footerlogo img{
+    width: 25px;
+}
+.footername{
+    margin-left: 2%;
+    font-size: 10px;
+}
+.footer{
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footertxt{
+    display: flex;
+    margin-right: 0px;
+    color: white;
+}
+.footerlist{
+    list-style: none;;
+}
+.footerlink{
+    text-decoration: none;
+    font-weight: 100;
+    letter-spacing: 1.4px;
+    font-size: 13px;
+    color: white;
+}
+.footerlinklist{
+    margin-bottom: 30%;
+}
+.linkhead{
+    margin-bottom: 35%;
+}
+
+}

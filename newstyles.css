@@ -1,0 +1,42 @@
+.logocomp{
+    width: 140px;
+}
+.video-frame{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.video-frame div{
+    width: 800px;
+    margin: 2%;
+    color: aliceblue;
+}
+.video-frame div h1{
+    font-size: 70px;
+}
+.video-frame div p{
+    margin: 2% auto;
+    font-size: 20px;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.video-frame div ul{
+    margin-top: 4%;
+}
+.video-frame div li{
+    font-size: 18px;
+    margin-top: 3%;
+}
+.video-frame div h2{
+    font-size: 50px;
+    margin: 5% auto 2% 5%;
+    text-align: center;
+    font-weight: 100;
+}
+.bento-img-text{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    filter: drop-shadow(0px 0px 5px black);
+}

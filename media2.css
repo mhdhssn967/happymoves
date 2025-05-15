@@ -1,0 +1,39 @@
+@media only screen and (max-width: 768px) {
+.logocomp{
+    width: 140px;
+}
+.video-frame{
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+.video-frame div{
+    width: 90vw;
+    margin: 2%;
+    color: aliceblue;
+}
+.video-frame div h1{
+    font-size: 25px;
+    text-wrap: wrap;
+    margin-top: 2%;
+}
+.video-frame div p{
+    font-size: 12px;
+    text-align: justify;
+}
+
+.video-frame div li{
+    font-size: 12px;
+}
+.video-frame div h2{
+    font-size: 40px;
+}
+.bento-img-text{
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+}
