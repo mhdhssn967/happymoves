@@ -526,6 +526,7 @@ nav div{
 
 .lifetime:hover{
     transform: scale(1.2) !important;
+    z-index: 1;
 }
 .details{
     margin-top: 10%;
@@ -559,7 +560,7 @@ nav div{
     display: flex;
     justify-content: space-evenly;
     width: 55%;
-    gap: 10px;
+    gap: 30px;
 }
 .card:hover{
     transform: scale(1.1) !important;
@@ -568,6 +569,7 @@ nav div{
     transition: 0.5s;
     border-radius: 15px;
     border: 0px;
+    z-index: 1;
 }
 .joinbutton:hover{
     box-shadow: inset 0px 0px 5px 3px #dcd8e0,0px 0px 10px 1px #602A9A;
