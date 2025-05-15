@@ -19,7 +19,7 @@ body{
     font-size: 12px;
 }
 .video-frame iframe{
-    width: 90vw;
+    width: 100vw;
     height: 600px;
 }
 
@@ -53,7 +53,7 @@ body{
 
 
 .heroimg{
-    width: 85vw;
+    width: 90vw;
 }
 
 .logocomp{
@@ -77,16 +77,18 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     margin-top: 0%;
     margin-left: 1%;
 }
 .bento2img{
-    margin-left: 1%;
+    margin-left: 0%;
     /* box-shadow: inset 0px 0px 100px 10px #602A9A; */
 }
 .bento1img, .bento4img{
     font-size: 10px;
     padding: 0px;
+    margin:3% 0%;
 }
 .bento1img img,.bento4img img{
     width: 250px;
@@ -120,7 +122,7 @@ body{
 }
 .bentcont{
     font-size: 12px;
-    text-align: justify;
+    text-align: center;
     padding: 0%;
 }
 .cont{
