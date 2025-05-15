@@ -2,7 +2,7 @@
     /* Your mobile styles go here */
 body{
     background-color: rgb(23, 17, 26);
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
 }
 .logoimg{
@@ -345,8 +345,9 @@ input{
     color: white;
     align-items: center;
     display: flex;
-    margin-left: 10%;
-    width: 400px;
+    /* margin-left: 10%; */
+    width: 100vw;
+    overflow-x: hidden;
 }
 .footerlogo img{
     width: 25px;
@@ -382,6 +383,9 @@ input{
 }
 .linkhead{
     margin-bottom: 35%;
+}
+.container{
+    width: 100vw;
 }
 
 }

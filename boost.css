@@ -677,7 +677,6 @@ input{
 }
 .footertxt{
     display: flex;
-    margin-right: 10%;
     color: white;
 }
 .footerlist{
