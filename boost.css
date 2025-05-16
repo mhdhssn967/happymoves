@@ -430,6 +430,11 @@ nav div{
     text-align: center;
     margin-top: 3%;
 }
+.reviews-div{
+    display: flex;
+    width: 90vw;
+    gap: 25px;
+}
 .review{
     margin-top: 1%;
     display: flex;
@@ -439,6 +444,7 @@ nav div{
     border-bottom: solid rgba(134, 101, 145, 0.651) 0.5px;
     width: 800px;
     padding: 2%;
+    background-color: #020103;    
 }
 .reviewtext{
     color: white;
@@ -719,9 +725,28 @@ input{
 .container{
     background-image: linear-gradient(to bottom, rgb(23, 17, 26), #020103);
 }
-
-
-
+.doctors-panel{
+    text-align: center;
+    color: aliceblue;
+}
+.doctor h2{
+    font-size: 17px;
+    margin: 2%;
+    text-wrap: nowrap;
+}
+.doctor p{
+    font-size: 14px;
+}
+.doctor img{
+    width: 125px;
+    border-radius: 10px;
+}
+.doctors-div{
+    margin: 2.5%;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
 
 
 
