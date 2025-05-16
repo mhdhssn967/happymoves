@@ -455,5 +455,29 @@
         width: 100vw;
         overflow-x: hidden;
     }
+    .doctors-panel{
+    text-align: center;
+    color: aliceblue;
+}
+.doctor h2{
+    font-size: 12px;
+    margin: 2%;
+    text-wrap: nowrap;
+}
+.doctor p{
+    font-size: 10px;
+}
+.doctor img{
+    width: 40px;
+    border-radius: 5px;
+}
+.doctors-div{
+    margin: 2.5%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
 
 }

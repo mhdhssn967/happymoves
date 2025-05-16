@@ -431,7 +431,7 @@ nav div{
     margin-top: 3%;
 }
 .reviews-div{
-    display: flex;
+    /* display: flex; */
     width: 90vw;
     gap: 25px;
 }
@@ -444,7 +444,7 @@ nav div{
     border-bottom: solid rgba(134, 101, 145, 0.651) 0.5px;
     width: 800px;
     padding: 2%;
-    background-color: #020103;    
+    /* background-color: #020103;     */
 }
 .reviewtext{
     color: white;
