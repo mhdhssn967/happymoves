@@ -854,7 +854,7 @@ input{
 
 /* Middle (active) slide */
 .swiper-slide-active {
-  transform: scale(1.2) !important;
+  transform: scale(1) !important;
   opacity: 1;
   filter: none;
 filter: drop-shadow(0px 0px 100px #602A9A);
