@@ -479,5 +479,20 @@
     align-items: center;
     justify-content: center;
 }
+.associates{
+    animation: scroll-left 10s linear infinite;
+}
+.associates span img{
+    width: 40px;
+    align-self: center;
+    padding: 3px;
+    background-color: white;
+    border-radius: 3px;
+}
+.associates span{
+  gap: 10px;
+  padding-right: 10px;
+}
+
 
 }

@@ -757,11 +757,11 @@ input{
 }
 
 .marquee-wrapper {
-   overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  width: 100%;
-      margin-top: 5%;
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 5%;
 }
 .associates{
     display: flex;
@@ -769,7 +769,7 @@ input{
 }
 .associates span{
   display: flex;
-  padding-right: 50px;
+  /* padding-right: 50px; */
   gap: 40px;
 }
 .associates span img{
