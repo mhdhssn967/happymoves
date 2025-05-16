@@ -524,8 +524,10 @@
     }
 
     .swiper-wrapper {
-        justify-content: center;
-        margin-left: 80%;
+        /* justify-content: center; */
+        justify-self: center;
+        margin-left: -50%;
+        margin-top: 50px;
     }
 
 

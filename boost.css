@@ -434,7 +434,7 @@ nav div{
 .reviews-div{
     /* display: flex; */
     width: 90vw;
-    gap: 25px;
+    gap: 2px;
 }
 .review{
     margin-top: 1%;
@@ -448,6 +448,7 @@ nav div{
     padding: 2%;
     background-color: #020103; 
     height: 500px;  
+    border-radius: 20px ;
 }
 .reviewtext{
     color: white;
@@ -823,9 +824,10 @@ input{
 
 .swiper-container {
   width: 100%;
-  max-width: 1500px;
+  max-width: 100%;
   margin: auto;
-  overflow: hidden;
+  /* overflow-x: hidden; */
+  justify-self: center;
   padding: 50px 0;
 }
 
@@ -842,4 +844,27 @@ input{
   transform: scale(1.2);
   opacity: 1;
   z-index: 10;
+}
+.swiper-slide {
+  transform: scale(0.5) !important;
+  opacity: 0.5;
+  transition: all 0.5s ease-in-out;
+  filter: blur(2px);
+}
+
+/* Middle (active) slide */
+.swiper-slide-active {
+  transform: scale(1.2) !important;
+  opacity: 1;
+  filter: none;
+filter: drop-shadow(0px 0px 100px #602A9A);
+  z-index: 2;
+}
+
+/* Previous & next to active (optional styling) */
+.swiper-slide-prev,
+.swiper-slide-next {
+  transform: scale(0.5) !important;
+  opacity: 0.7;
+  filter: blur(1px);
 }
