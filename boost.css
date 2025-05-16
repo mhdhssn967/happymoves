@@ -736,8 +736,11 @@ input{
 }
 .doctor h2{
     font-size: 17px;
-    margin: 2%;
+    margin: 20px;
     text-wrap: nowrap;
+}
+.doctor{
+    margin: 10px;
 }
 .doctor p{
     font-size: 14px;
@@ -749,11 +752,12 @@ input{
 .doctors-div{
     margin: 2.5%;
     display: flex;
-    gap: 100px;
+    gap: 200px;
     justify-content: center;
 }
 .associations{
     width: 100vw;
+    margin: 50px auto;
 }
 .associations h1{
     margin-bottom: -2%;
