@@ -769,7 +769,7 @@ input{
 }
 .associates span{
   display: flex;
-  /* padding-right: 50px; */
+  padding-right: 50px;
   gap: 40px;
 }
 .associates span img{
