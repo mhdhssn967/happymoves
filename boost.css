@@ -440,12 +440,14 @@ nav div{
     margin-top: 1%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-content: center;
     /* border-top: solid rgba(134, 101, 145, 0.651) 0.5px; */
     border-bottom: solid rgba(134, 101, 145, 0.651) 0.5px;
-    width: 800px;
+    width: 400px;
     padding: 2%;
-    /* background-color: #020103;     */
+    background-color: #020103; 
+    height: 500px;  
 }
 .reviewtext{
     color: white;
@@ -816,4 +818,28 @@ input{
         box-shadow: 0px -80px 200px 10px #602A9A;
     }
     
+}
+
+
+.swiper-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: auto;
+  overflow: hidden;
+  padding: 50px 0;
+}
+
+.swiper-slide {
+  text-align: center;
+  transition: transform 0.5s ease;
+  transform: scale(0.2);
+  opacity: 0.5;
+}
+
+
+/* Active slide styling (middle one) */
+.swiper-slide-active {
+  transform: scale(1.2);
+  opacity: 1;
+  z-index: 10;
 }

@@ -243,11 +243,12 @@
         margin-top: 1%;
         display: flex;
         justify-content: center;
-        align-content: center;
-        /* border-top: solid rgba(134, 101, 145, 0.651) 0.5px; */
+        align-items: center;
         border-bottom: solid rgba(134, 101, 145, 0.651) 0.5px;
-        width: 88vw;
+        width: 200px;
         padding: 2%;
+        height: 300px;
+        text-align: center;
     }
 
     .reviewtext {
@@ -455,44 +456,77 @@
         width: 100vw;
         overflow-x: hidden;
     }
-    .doctors-panel{
-    text-align: center;
-    color: aliceblue;
-}
-.doctor h2{
-    font-size: 12px;
-    margin: 2%;
-    text-wrap: nowrap;
-}
-.doctor p{
-    font-size: 10px;
-}
-.doctor img{
-    width: 40px;
-    border-radius: 5px;
-}
-.doctors-div{
-    margin: 2.5%;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
-}
-.associates{
-    animation: scroll-left 10s linear infinite;
-}
-.associates span img{
-    width: 40px;
-    align-self: center;
-    padding: 3px;
-    background-color: white;
-    border-radius: 3px;
-}
-.associates span{
-  gap: 10px;
-  padding-right: 10px;
-}
+
+    .doctors-panel {
+        text-align: center;
+        color: aliceblue;
+    }
+
+    .doctor h2 {
+        font-size: 12px;
+        margin: 2%;
+        text-wrap: nowrap;
+    }
+
+    .doctor p {
+        font-size: 10px;
+    }
+
+    .doctor img {
+        width: 40px;
+        border-radius: 5px;
+    }
+
+    .doctors-div {
+        margin: 2.5%;
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .associates {
+        animation: scroll-left 10s linear infinite;
+    }
+
+    .associates span img {
+        width: 40px;
+        align-self: center;
+        padding: 3px;
+        background-color: white;
+        border-radius: 3px;
+    }
+
+    .associates span {
+        gap: 10px;
+        padding-right: 10px;
+    }
+
+    .swiper-container {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        padding: 30px 0;
+    }
+
+    .swiper-slide {
+        transform: scale(0.5);
+        /* Slightly larger than before on small screens */
+        opacity: 0.4;
+    }
+
+    .swiper-slide-active {
+        transform: scale(1);
+        /* Reduce scaling for mobile view */
+        opacity: 1;
+        z-index: 10;
+    }
+
+    .swiper-wrapper {
+        justify-content: center;
+        margin-left: 80%;
+    }
 
 
 }
