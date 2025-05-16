@@ -420,6 +420,7 @@ nav div{
     color: white;
     font-weight: 400;
     font-size: 56px;
+    margin-top: 3%;
     text-align: center;
 }
 .contmain{
@@ -728,6 +729,7 @@ input{
 .doctors-panel{
     text-align: center;
     color: aliceblue;
+    margin-top: 3%;
 }
 .doctor h2{
     font-size: 17px;
@@ -747,11 +749,45 @@ input{
     gap: 100px;
     justify-content: center;
 }
+.associations{
+    width: 100vw;
+}
+.associations h1{
+    margin-bottom: -2%;
+}
 
+.marquee-wrapper {
+   overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  width: 100%;
+      margin-top: 5%;
+}
+.associates{
+    display: flex;
+    animation: scroll-left 15s linear infinite;
+}
+.associates span{
+  display: flex;
+  padding-right: 50px;
+  gap: 40px;
+}
+.associates span img{
+    width: 150px;
+    align-self: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
 
-
-
-
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 
 
 
