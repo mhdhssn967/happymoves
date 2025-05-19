@@ -88,6 +88,9 @@
         gap: 5px;
         width: 90vw !important;
     }
+    .video-content h2{
+        margin: 10% !important;
+    }
 
     .bento {
         text-align: center;
@@ -179,7 +182,7 @@
     /*  */
     .features {
         justify-self: center;
-        width: 100vw;
+        width: 90vw;
         height: fit-content;
         text-align: center;
         border: none;
@@ -190,6 +193,7 @@
         background-image: linear-gradient(to bottom right, #190D2E, #020103);
         border: solid rgba(255, 255, 255, 0.2);
         padding: 30px;
+        margin: 0px !important;
     }
 
     .featureshead {
@@ -210,7 +214,7 @@
         font-weight: 400;
         display: inline-block;
         font-size: 18px;
-        margin-left: 2%;
+        /* margin-left: 2%; */
     }
 
     .featuresbodytext {
