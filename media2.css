@@ -65,8 +65,9 @@
     font-size: 15px;
 }
 .other-team{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
     gap: 20px;
 }
 
