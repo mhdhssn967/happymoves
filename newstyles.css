@@ -108,6 +108,7 @@ body {
 }
 .other-team img{
     border-radius: 20px;
+    
 }
 .other-team div:nth-child(even){
     margin-top: 80px;
@@ -116,7 +117,12 @@ body {
     height: 350px;
     width: 220px;
     background-size: cover;
+    transition: 0.2s;
 }
+/* .other-team-img-container:hover .other-team-img{
+    transform: rotate3d(0, 3, 0, 180deg) scale(1.2);
+    
+} */
 .other-team-img div{
     background: linear-gradient(to bottom , rgba(0, 0, 0, 0.01), rgb(0, 0, 0));
     height: 100%;
