@@ -497,11 +497,15 @@
     .doctors-div {
         margin: 2.5%;
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
         align-items: center;
         justify-content: center;
     }
+    .doctors-div .doctor:nth-child(5):nth-last-child(1) {
+  grid-column: 1 / -1;
+  justify-self: center;
+}
 
     .associates {
         animation: scroll-left 10s linear infinite;
