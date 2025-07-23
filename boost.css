@@ -761,8 +761,12 @@ input{
 .doctors-div{
     margin: 2.5%;
     display: flex;
-    gap: 200px;
+    gap: 20px;
+    flex-wrap: wrap;
     justify-content: center;
+}
+.doctors-div .doctor{
+    flex: 1;
 }
 .associations{
     width: 100vw;
