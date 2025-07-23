@@ -89,5 +89,32 @@
 .pricing{
     display: none;
 }
+.imgdivmob{
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+    gap: 50px;
+    background-color: rgb(46, 24, 46);
+    padding: 20px;
+    filter: drop-shadow(0px 0px 2px purple);
+}
+.imgdivmob ul li{
+    list-style: none;
+        font-size: 10px;
+}
+.imgdivmob ul{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.h-l{
+    text-align: left;
+    padding-left: 0px;
+}
+.h-r{
+    text-align: right;
+    padding-left: 0px;
+}
 
 }

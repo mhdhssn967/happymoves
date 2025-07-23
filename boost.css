@@ -224,6 +224,9 @@ nav div{
     align-items: center;
     gap: 50px;
 }
+.imgdivmob{
+    display: none;
+}
 .heroimgdiv ul li{
     list-style: none;
 }
