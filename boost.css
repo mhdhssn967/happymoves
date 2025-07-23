@@ -220,11 +220,33 @@ nav div{
 .heroimgdiv{
     position: relative;
     margin-top: 2%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.heroimgdiv ul li{
+    list-style: none;
+}
+.heroimgdiv ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: rgb(247, 215, 252);
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.h-l{
+    text-align: left;
+}
+.h-r{
+    text-align: right;
 }
 .heroimg{
     /* box-shadow: 0px -80px 200px 10px #602A9A; */
     animation: shadows 15s infinite;
     width: 1200px;
+    border-radius: 15px;
     /* filter: brightness(0.7); */
 }
 
