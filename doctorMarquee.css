@@ -1,0 +1,38 @@
+.doctors-div-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  /* background: #f9f9f9; */
+}
+
+.doctors-div {
+  display: flex;
+  width: fit-content;
+  animation: scroll-left 24s linear infinite;
+}
+
+.scroll-content {
+  display: flex;
+}
+
+.doctor {
+  flex: 0 0 auto;
+  width: 250px;
+  margin: 20px;
+  text-align: center;
+  /* background: white; */
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px;
+}
+
+
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

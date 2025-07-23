@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="./carousal.css">
             <link rel="stylesheet" href="./media.css">
             <link rel="stylesheet" href="./media2.css">
-
+            <link rel="stylesheet" href="doctorMarquee.css">
 
 <!-- Swiper -->
  
@@ -332,46 +332,89 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
 <!-- Doctors panel -->
  <div class="doctors-panel">
     <h1 class="headingsmain">Our Doctors Panel</h1>
-                <div class="doctors-div">
-                    <div class="doctor">
-                        <img src="./Assets/Client Avatars/aftab.jpeg" alt="">
-                        <h2>Aftab Hussain A Z</h2>
-                        <p>Senior Physiotherapist <br> Thabaz Rehabilitation Center</p>
-                    </div>
- 
-                    <div class="doctor">
-                        <img src="./Assets/Client Avatars/haseeb.jpg" alt="">
-                        <h2>Dr. Haseeb Rahman</h2>
-                        <p>HOD Physiotherapy & Rehabilitation <br> Milife Medicity</p>
-                    </div>
+                <div class="doctors-div-wrapper">
+  <div class="doctors-div">
+    <!-- Original content duplicated for seamless infinite scroll -->
+    <div class="scroll-content">
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/aftab.jpeg" alt="">
+        <h2>Aftab Hussain A Z</h2>
+        <p>Senior Physiotherapist <br> Thabaz Rehabilitation Center</p>
+        <p>Palakkad</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/haseeb.jpg" alt="">
+        <h2>Dr. Haseeb Rahman</h2>
+        <p>HOD Physiotherapy & Rehabilitation <br> Milife Medicity</p>
+        <p>Kottakkal</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/jim.png" alt="">
+        <h2>Dr. Jim Gopalakrishnan</h2>
+        <p>Physiotherapy <br> Kerala State Secretary</p>
+        <p>Trivandrum</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/arun.jpg" alt="">
+        <h2>Dr Arun Kumar T</h2>
+        <p>Chief Physiotherapist <br> Convenor IAP</p>
+        <p>Ernakulam</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/vanguru.jpg" alt="">
+        <h2>Dr Vanguru Anil PT</h2>
+        <p>Physiotherapist <br> Ayushman Rehabilitation Center</p>
+        <p>Hyderabad</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/Priyanka.jpg" alt="">
+        <h2>Priyanka Verma</h2>
+        <p>Sports physiotherapist <br> Apollo spectra hospital</p>
+        <p>Delhi</p>
+      </div>
 
-                    <div class="doctor">
-                        <img src="./Assets/Client Avatars/jim.png" alt="">
-                        <h2>Dr. Jim Gopalakrishnan</h2>
-                        <p>Physiotherapy <br> Kerala State Secretary</p>
-                    </div>
+      <!-- Duplicated content starts here -->
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/aftab.jpeg" alt="">
+        <h2>Aftab Hussain A Z</h2>
+        <p>Senior Physiotherapist <br> Thabaz Rehabilitation Center</p>
+        <p>Palakkad</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/haseeb.jpg" alt="">
+        <h2>Dr. Haseeb Rahman</h2>
+        <p>HOD Physiotherapy & Rehabilitation <br> Milife Medicity</p>
+        <p>Kottakkal</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/jim.png" alt="">
+        <h2>Dr. Jim Gopalakrishnan</h2>
+        <p>Physiotherapy <br> Kerala State Secretary</p>
+        <p>Trivandrum</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/arun.jpg" alt="">
+        <h2>Dr Arun Kumar T</h2>
+        <p>Chief Physiotherapist <br> Convenor IAP</p>
+        <p>Ernakulam</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/vanguru.jpg" alt="">
+        <h2>Dr Vanguru Anil PT</h2>
+        <p>Physiotherapist <br> Ayushman Rehabilitation Center</p>
+        <p>Hyderabad</p>
+      </div>
+      <div class="doctor">
+        <img src="./Assets/Client Avatars/Priyanka.jpg" alt="">
+        <h2>Priyanka Verma</h2>
+        <p>Sports physiotherapist <br> Apollo spectra hospital</p>
+        <p>Delhi</p>
+      </div>
+    </div>
+  </div>
+</div>
 
-                    <div class="doctor">
-                        <img src="./Assets/Client Avatars/arun.jpg" alt="">
-                        <h2>Dr Arun Kumar T</h2>
-                        <p>Chief Physiotherapist <br> Convenor IAP Ernakulam </p>
-                    </div>
 
-                    <div class="doctor">
-                        <img src="./Assets/Client Avatars/vanguru.jpg" alt="">
-                        <h2>Dr Vanguru Anil PT</h2>
-                        <p>Physiotherapist <br> Ayushman Rehabilitation Center</p>
-                    </div>
-
-                    <div class="doctor">
-                        <img src="./Assets/Client Avatars/Priyanka.jpg" alt="">
-                        <h2>Priyanka Verma</h2>
-                        <p>Sports physiotherapist <br> Apollo spectra hospital</p>
-                    </div>
-    
- 
-
-                </div>
 
                 
   
@@ -484,6 +527,7 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
 
        <!-- Swiper -->
        <div class="sw-main">
+        <h2 style="font-size: 40px;text-align: center; color: white;">Testimonials</h2>
             <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><div class="review" data-aos="fade-up"
@@ -680,21 +724,52 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
     <div class="cta" data-aos="fade-up" data-aos-duration="1000" id="contact">
            <h1 class="ctahead">Get in touch with us</h1>
         <div class="cta-info">
-             <div class="contactinfo" style="margin-top: 30px; text-align: left;">
+             <div class="contactinfo" style="margin-bottom: 30px; text-align: left;">
                 <p><strong>OQULIX PVT. LTD.</strong><br>
                     <br>
                 1st Floor, A Square Building, Edappally,<br>
                 Edathala PO, Ernakulam, Kerala 683561</p>
                 <p class="phone"> +91 9447433005 <br> +91 8086651810</p>
-                <p><a class="cta-link" href="https://www.oqulix.com" target="_blank">www.oqulix.com</a></p>
+                <p><a class="cta-link" href="https://www.oqulix.com" target="_blank" >www.oqulix.com</a></p>
             </div>
         <div class="ctacont">
       <div class="trial">
-                <p class="trialtext">Drop in your email and we will contact you</p>
             </div>
             <div class="inputcta">
-                <input type="text" placeholder="Your Email">
-                <button href="" class="waitlistbutton">Submit</button>
+                <p class="trialtext">Drop in your email and we will contact you</p>
+</div>
+
+<div class="inputcta">
+  <input type="email" id="userEmail" placeholder="Your Email" required />
+  <button class="waitlistbutton" onclick="submitEmail(event)">Submit</button>
+</div>
+
+<p id="responseMsg"></p>
+
+<script>
+  async function submitEmail(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("userEmail").value;
+
+    try {
+      const response = await fetch("http://localhost:3001/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ email })
+      });
+
+      const data = await response.json();
+      document.getElementById("responseMsg").innerText = data.message;
+    } catch (error) {
+      document.getElementById("responseMsg").innerText = "Something went wrong. Try again later.";
+      console.error("Error:", error);
+    }
+  }
+</script>
+
             </div>
             
             <div class="social">
