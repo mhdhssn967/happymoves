@@ -225,7 +225,7 @@ nav div{
     /* box-shadow: 0px -80px 200px 10px #602A9A; */
     animation: shadows 15s infinite;
     width: 1200px;
-    filter: brightness(0.7);
+    /* filter: brightness(0.7); */
 }
 
 .companytext{
