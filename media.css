@@ -61,7 +61,15 @@
 
 
     .heroimg {
+        width: 90vw;
+        /* margin-left: 50px; */
+    }
+    .heroimgdiv{
         width: 100vw;
+        outline: solid red;
+        margin: 0px;
+        display: flex;
+        justify-content: center;
     }
 
     .logocomp {
@@ -496,7 +504,6 @@
 
     .doctors-div {
         margin: 2.5%;
-        
         gap: 20px;
 
     }
