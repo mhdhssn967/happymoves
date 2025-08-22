@@ -60,10 +60,10 @@
         <input type="text" id="name" name="name" placeholder="Your full name" required>
 
         <label for="name">Organization Name</label>
-        <input type="text" id="name" name="name" placeholder="Your full name" required>
+        <input type="text" id="orgName" name="orgName" placeholder="Your full name" required>
 
         <label for="email">Email or Phone number</label>
-        <input type="text" id="email" name="email" placeholder="Your email address" required>
+        <input type="text" id="contact" name="contact" placeholder="Your email address" required>
 
         <label for="place">Region / Place Covered</label>
         <input type="text" id="place" name="place" placeholder="E.g., Kerala, Maharashtra">
@@ -817,8 +817,8 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
     event.preventDefault();
 
     const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const phone = document.getElementById("phone").value;
+    const orgName = document.getElementById("orgName").value;
+    const contact = document.getElementById("contact").value;
     const place = document.getElementById("place").value;
     const message = document.getElementById("message").value;
 
@@ -831,8 +831,8 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
         body: JSON.stringify({
           type: "distributor",   // optional: helps backend know it’s distributor
           name,
-          email,
-          phone,
+          orgName,
+          contact,
           place,
           message
         })
@@ -986,8 +986,8 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
       e.preventDefault();
       const data = {
         name: form.name.value,
-        email: form.email.value,
-        phone: form.phone.value,
+        orgName: form.orgName.vale,
+        contact: form.contact.value,
         place: form.place.value,
         message: form.message.value
       };
