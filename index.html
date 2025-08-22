@@ -9,6 +9,8 @@
         <link rel="stylesheet" href="./carousal.css">
             <link rel="stylesheet" href="./media.css">
             <link rel="stylesheet" href="./media2.css">
+                        <link rel="stylesheet" href="./modal.css">
+
 
     <link rel="icon" type="image/png" href="/Assets/OQfav.png" style="width: 20px; height: 20px;">
 
@@ -23,6 +25,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:wght@100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- Modal style -->
+
 </head>
 <body>
 <nav>
@@ -38,7 +44,39 @@
             <li class="navitem"><a href="#pricing" class="navitemlinks">Pricing</a></li>
             <li class="navitem"><a href="#contact" class="navitemlinks">Contact</a></li>
         </ul>
+
     </div>
+
+
+    <!--  -->
+
+  <!-- Modal -->
+ <div class="hm-modal-overlay" id="hmModal">
+    <div class="hm-modal">
+      <button class="hm-close-btn" id="closeModalBtn">&times;</button>
+      <h2>Distributor Enquiry – Happy Moves</h2>
+      <form id="hmForm">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="name">Organization Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+        <label for="email">Email or Phone number</label>
+        <input type="text" id="email" name="email" placeholder="Your email address" required>
+
+        <label for="place">Region / Place Covered</label>
+        <input type="text" id="place" name="place" placeholder="E.g., Kerala, Maharashtra">
+
+        <label for="message">Message (Optional)</label>
+        <textarea id="message" name="message" rows="4" placeholder="Any additional details..."></textarea>
+
+        <button type="submit">Submit Enquiry</button>
+      </form>
+    </div>
+  </div>
+    <!--  -->
+
 
     <div class="navend">
         <div title="Message us on whatsapp" class="joinbutton1">
@@ -46,6 +84,7 @@
                 <i class="fab fa-whatsapp"></i> +91 7012262974
             </a>
         </div>
+               <button id="openModalBtn">Become a Distributor</button>
         <div class="navlinks2" id="navLinks2">
         <ul class="navlist">
             <li class="navitem"><a href="#gallery" class="navitemlinks">Gallery</a></li>
@@ -773,6 +812,43 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
   }
 </script>
 
+<script>
+  async function submitDistributorForm(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const place = document.getElementById("place").value;
+    const message = document.getElementById("message").value;
+
+    try {
+      const response = await fetch("https://oqulix-mail.onrender.com/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          type: "distributor",   // optional: helps backend know it’s distributor
+          name,
+          email,
+          phone,
+          place,
+          message
+        })
+      });
+
+      const data = await response.json();
+      document.getElementById("distributorResponseMsg").innerText = data.message;
+    } catch (error) {
+      document.getElementById("distributorResponseMsg").innerText =
+        "Something went wrong. Try again later.";
+      console.error("Error:", error);
+    }
+  }
+</script>
+
+
             </div>
             
             <div class="social">
@@ -883,5 +959,44 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
     }
   });
 </script>
+
+
+<!-- Modal -->
+  <script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('hmModal');
+    const form = document.getElementById('hmForm');
+
+    openModalBtn.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = {
+        name: form.name.value,
+        email: form.email.value,
+        phone: form.phone.value,
+        place: form.place.value,
+        message: form.message.value
+      };
+      console.log("Distributor Form Submitted:", data);
+
+      alert("Thank you for your interest in Happy Moves!\nWe will reach out soon.");
+      modal.style.display = 'none';
+      form.reset();
+    });
+  </script>
 
 </html>
