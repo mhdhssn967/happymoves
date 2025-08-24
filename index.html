@@ -942,4 +942,25 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
   });
 </script>
 
+<script>
+    const openModalBtn = document.getElementById('openModalBtn');
+    const closeModalBtn = document.getElementById('closeModalBtn');
+    const modal = document.getElementById('hmModal');
+    const form = document.getElementById('hmForm');
+
+    openModalBtn.addEventListener('click', () => {
+      modal.style.display = 'flex';
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.style.display = 'none';
+      }
+    });
+  </script>
+
 </html>
