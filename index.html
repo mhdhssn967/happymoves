@@ -961,6 +961,16 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
         modal.style.display = 'none';
       }
     });
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      alert("Thank you for your interest in Happy Moves!\nWe will reach out soon.");
+      modal.style.display = 'none';
+      form.reset();
+    });
   </script>
+
+
 
 </html>
