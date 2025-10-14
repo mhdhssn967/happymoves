@@ -241,6 +241,9 @@ nav div{
     font-weight: 100;
     letter-spacing: 2px;
 }
+.other-team-img div h3{
+    margin: 15px 0px;
+}
 .h-l{
     text-align: left;
 }
