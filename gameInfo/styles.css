@@ -1,0 +1,170 @@
+:root {
+  --bg: #f7f9fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #0ea5a4;
+  --accent-2: #0369a1;
+  --max-width: 1100px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+  color: #0f172a;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  line-height: 1.45;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 28px auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+}
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+.subtitle {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+/* Nav */
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 14px rgba(2,6,23,0.06);
+}
+.toc {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.toc a {
+  color: black;
+  text-decoration: none;
+  background-color: rgb(204, 204, 204);
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+.toc a:hover {
+  background-color: var(--accent);
+  color: white;
+}
+.section-intro {
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+/* Table */
+.table-wrap {
+  overflow: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #eef2f7;
+  text-align: left;
+  font-size: 14px;
+}
+th {
+  background: transparent;
+  font-weight: 600;
+}
+
+/* Modules */
+.module {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 18px;
+  align-items: start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.module:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(2, 6, 23, 0.1);
+}
+.module h3 {
+  color: var(--accent-2);
+}
+.placeholder img {
+  width: 70%;
+  border-radius: 12px;
+}
+@media (max-width: 900px) {
+  .module {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Rehab Sections */
+.rehab-section {
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.rehab-section .section-header {
+  margin-bottom: 16px;
+}
+.rehab-section.upper {
+  background: linear-gradient(135deg, #dff6f4, #ffffff);
+  border-left: 5px solid #0ea5a4;
+}
+.rehab-section.fine {
+  background: linear-gradient(135deg, #e8f4fc, #ffffff);
+  border-left: 5px solid #0284c7;
+}
+.rehab-section.neck {
+  background: linear-gradient(135deg, #f4ecff, #ffffff);
+  border-left: 5px solid #8b5cf6;
+}
+.rehab-section.trunk {
+  background: linear-gradient(135deg, #fff8eb, #ffffff);
+  border-left: 5px solid #f59e0b;
+}
+.rehab-section.shoulder {
+  background: linear-gradient(135deg, #fef2f2, #ffffff);
+  border-left: 5px solid #dc2626;
+}
+.rehab-section.lower {
+  background: linear-gradient(135deg, #ecfdf5, #ffffff);
+  border-left: 5px solid #16a34a;
+}
+
+/* Footer */
+footer .footer-content {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.small-meta {
+  font-size: 13px;
+  color: var(--muted);
+}
