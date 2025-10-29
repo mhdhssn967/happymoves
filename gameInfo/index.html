@@ -416,9 +416,128 @@
         </article>
       </section>
 
+      <div class="analytics-container">
+  <section class="analytics-card">
+    <div class="analytics-header">
+      <div>
+        <h2>Analytics & Reports</h2>
+        <p class="section-intro">Session-level capture, visualization and multi-dimensional analysis of every game played. Therapists can review progress over time, inspect single-session performance, and export observations for clinical notes.</p>
+      </div>
+      
+    </div>
+<div class="meta">
+        <div class="meta-item"><strong>Saved:</strong> Every session per patient</div>
+        <div class="meta-item"><strong>Views:</strong> 3D / 2D · Summary · Raw</div>
+      </div> <br>
+    <!-- Data capture explanation -->
+    <div class="analytics-row">
+      <div class="analytics-panel">
+        <h3>How data is captured</h3>
+        <p>Each gameplay instance is stored as an individual session record tied to the patient ID and timestamp. Records include: motion tracking frames, joint coordinates, timestamps, game events (targets hit/missed), and therapist metadata (difficulty, assistive volume used).</p>
+
+        <h4>Session storage</h4>
+        <ul>
+          <li>Session metadata (patient, date/time, module, settings)</li>
+          <li>Frame-by-frame kinematics (XYZ coordinates, joint angles)</li>
+          <li>Event logs (targets, scores, timestamps)</li>
+          <li>Derived metrics (range-of-motion, efficiency, reaction time)</li>
+        </ul>
+      </div>
+
+      <!-- <div class="analytics-panel small">
+        <h3>Quick features</h3>
+        <ul class="feature-list">
+          <li>Therapist annotations & flags</li>
+          <li>Export CSV / PDF summary</li>
+          <li>Session comparison & trend charts</li>
+          <li>3D replay with overlayed performance dots</li>
+        </ul>
+      </div> -->
+    </div>
+
+    <!-- Example: Hand Gross Motor analysis -->
+    <div class="analysis-section">
+      <div class="analysis-header">
+        <h3>Example: Hand — Gross Motor (selected session)</h3>
+        <p class="small-meta">Selected from patient session list: <em>Hand Gross Motor → Mosquito Kill → 2025-10-20 11:15</em></p>
+      </div>
+
+      <div class="analysis-grid">
+        <div class="analysis-left">
+          <div class="screenshot-box">
+            <div class="screenshot-placeholder">
+              <!-- Insert progress-over-time graph screenshot here -->
+              <div class="screenshot-label"><img src="../Assets/Info/444.png" alt=""></div>
+            </div>
+            <p class="caption">Figure A - Progress chart showing performance across dates (efficiency, reaction time).</p>
+          </div>
+
+          <div class="screenshot-box">
+            <div class="screenshot-placeholder">
+              <!-- Insert single-session playback screenshot here -->
+              <div class="screenshot-label"><img src="../Assets/Info/333.png" alt=""></div>
+            </div>
+            <p class="caption">Figure B - Single-session summary with timestamps, target map and raw scores.</p>
+          </div>
+        </div>
+
+        <aside class="analysis-right">
+         <div class="metrics-card">
+  <h4>Session Summary</h4>
+  <ul class="metrics-list">
+    <li><span class="metric">Game Name</span><span class="metric-val">Hand Gross Motor</span></li>
+    <li><span class="metric">Date</span><span class="metric-val">29/10/2025</span></li>
+    <li><span class="metric">Hand Selected</span><span class="metric-val">Right</span></li>
+    <li><span class="metric">Play Duration</span><span class="metric-val">~12 seconds</span></li>
+    <li><span class="metric">Total Stimuli Points</span><span class="metric-val">4</span></li>
+    <li><span class="metric">Engaged Points</span><span class="metric-val">3</span></li>
+    <li><span class="metric">Missed Points</span><span class="metric-val">1</span></li>
+    <li><span class="metric">Highest Efficiency Point</span><span class="metric-val">Point 1 (80%)</span></li>
+    <li><span class="metric">Lowest Efficiency Point</span><span class="metric-val">Point 3 (0%)</span></li>
+    <li><span class="metric">Average Motor Efficiency</span><span class="metric-val">40%</span></li>
+    <li><span class="metric">Target Response</span><span class="metric-val">4 targets engaged</span></li>
+    <li><span class="metric">Therapist Feedback</span><span class="metric-val"> Below average response. Recommend targeted motor skill drills.</span></li>
+  </ul>
+</div>    
+      </div>
+
+      <div class="analysis-insight">
+  <h4>Performance Visualization</h4>
+  <p>
+    For each session, the system displays the exact points where targets appeared and how efficiently the patient interacted with them. 
+    Each point is represented by a colored marker, where the colour intensity indicates the <strong>efficiency level</strong> - based on how quickly and accurately the target was reached. 
+  </p>
+
+  <ul>
+    <li ><strong style="color: rgb(18, 180, 67);">Green points</strong> : targets reached efficiently with accurate movement</li>
+    <li><strong style="color: rgb(181, 194, 0);">Yellow points</strong> : moderate efficiency, slight delay or deviation</li>
+    <li><strong style="color: rgb(180, 56, 18);">Red points</strong> : low efficiency, missed or delayed reach</li>
+  </ul>
+
+  <p class="note">
+    The visual provides a clear, point-by-point summary of performance - helping therapists instantly identify strong and weak areas in the patient’s reach or coordination pattern.
+  </p>
+</div>
+
+      <div class="analysis-footer">
+        <h4>Clinical utility</h4>
+        <p class="section-intro">Therapists can use session and trend analytics to:</p>
+        <ul>
+          <li>Monitor gradual improvement in movement and accuracy</li>
+<li>Identify when progress slows or needs adjustment</li>
+<li>Compare performance between both hands</li>
+<li>Use data to support therapy decisions</li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+
       <section class="card">
         <h2>Conclusion</h2>
-        <p><strong>Happy Moves</strong> integrates modern VR technology with therapeutic science to support patient-centred rehabilitation. The platform offers therapist-controlled sessions, objective progress tracking and graded difficulty—enabling clinicians to prescribe targeted, measurable therapy that promotes neuroplasticity and functional recovery. By making rehabilitation immersive and engaging, Happy Moves improves adherence and supports faster, more sustainable outcomes.</p>
+        <p><strong>Happy Moves</strong> integrates modern VR technology with therapeutic science to support patient-centred rehabilitation. The platform offers therapist-controlled sessions, objective progress tracking and graded difficulty-enabling clinicians to prescribe targeted, measurable therapy that promotes neuroplasticity and functional recovery. By making rehabilitation immersive and engaging, Happy Moves improves adherence and supports faster, more sustainable outcomes.</p>
       </section>
 
       <footer class="card">
