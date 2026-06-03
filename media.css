@@ -560,5 +560,25 @@
         display: none;
     }
 
+    /* Mobile responsiveness for Client Review Videos */
+    .video-reviews-container {
+        grid-template-columns: 1fr;
+        max-width: 320px;
+        gap: 20px;
+    }
+    .video-review-card {
+        padding: 10px;
+    }
+    .video-review-card .video-title {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
 
+/* Tablet responsiveness for Client Review Videos (769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .video-reviews-container {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+    }
 }

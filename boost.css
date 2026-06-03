@@ -931,3 +931,74 @@ filter: drop-shadow(0px 0px 100px #602A9A);
   opacity: 0.7;
   filter: blur(1px);
 }
+
+/* Client Review Videos Section styling */
+.video-reviews-section {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #020103, rgb(23, 17, 26));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.video-reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+.video-review-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(134, 101, 145, 0.3);
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    box-sizing: border-box;
+}
+
+.video-review-card:hover {
+    transform: translateY(-10px);
+    border-color: rgba(187, 59, 226, 0.8);
+    box-shadow: 0 10px 40px rgba(96, 42, 154, 0.4);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.video-review-card .iframe-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    background: #000;
+}
+
+.video-review-card .iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.video-review-card .video-title {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
