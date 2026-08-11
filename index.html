@@ -103,6 +103,9 @@
     </div>
 </nav>
 
+    <div class="hero-video-container" style="width: 100%; max-width: 100vw;">
+        <iframe width="100%" style="aspect-ratio: 16/9;" src="https://www.youtube-nocookie.com/embed/BhUjNyZ3xgc?autoplay=1&controls=0&loop=1&playlist=BhUjNyZ3xgc&mute=1&cc_load_policy=0&iv_load_policy=3" title="HappyMoves by oqulix" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <div class="hero" data-aos="fade-up">
         <div class="badge">
@@ -672,6 +675,107 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
     </div>
        </div>
 
+    <!-- Patient Testimonials -->
+    <style>
+        .patient-testimonials-section {
+            padding: 80px 5%;
+            background-color: transparent;
+            text-align: center;
+        }
+        .patient-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .p-card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 30px;
+            width: 320px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            border: 1px solid rgba(134, 101, 145, 0.3);
+            border-top: 4px solid #602A9A;
+        }
+        .p-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 40px rgba(96, 42, 154, 0.4);
+            border-color: rgba(187, 59, 226, 0.8);
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .p-card::before {
+            content: "“";
+            font-size: 60px;
+            color: rgba(187, 59, 226, 0.15);
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        .p-card-text {
+            font-style: italic;
+            color: rgb(221, 219, 219);
+            margin-bottom: 20px;
+            font-size: 15px;
+            position: relative;
+            z-index: 1;
+            line-height: 1.6;
+        }
+        .p-card-author {
+            color: #ffffff;
+            margin: 0 0 5px 0;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .p-card-role {
+            font-size: 13px;
+            color: #B372CF;
+            font-weight: 500;
+        }
+    </style>
+    <div class="patient-testimonials-section" data-aos="fade-up" data-aos-duration="1500">
+        <h1 class="headingsmain">Patient Stories</h1>
+        <p class="contmain2">Hear from the people who have experienced the difference with Happy Moves.</p>
+        
+        <div class="patient-cards">
+            <div class="p-card">
+                <p class="p-card-text">The VR therapy exercises helped me regain strength in my left arm much faster than I ever expected.</p>
+                <h4 class="p-card-author">Rajesh K.</h4>
+                <span class="p-card-role">Stroke Patient</span>
+            </div>
+            
+            <div class="p-card">
+                <p class="p-card-text">My sessions feel more like playing games than doing exercises. It's incredibly motivating for me.</p>
+                <h4 class="p-card-author">Anitha Menon</h4>
+                <span class="p-card-role">Neurological Rehab</span>
+            </div>
+            
+            <div class="p-card">
+                <p class="p-card-text">The progress tracking really encouraged me. Highly recommend Happy Moves to anyone recovering.</p>
+                <h4 class="p-card-author">Suresh Kumar</h4>
+                <span class="p-card-role">Orthopedic Rehab</span>
+            </div>
+            
+            <div class="p-card">
+                <p class="p-card-text">A very fun and effective way to do physiotherapy. I don't feel bored during my therapy anymore!</p>
+                <h4 class="p-card-author">Priya Varghese</h4>
+                <span class="p-card-role">Post-Surgery Rehab</span>
+            </div>
+            
+            <div class="p-card">
+                <p class="p-card-text">The doctors could track exactly how I was doing. It made a huge difference in my recovery journey.</p>
+                <h4 class="p-card-author">Mohammed Ashiq</h4>
+                <span class="p-card-role">Stroke Recovery</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Pricing -->
     <div class="pricing" data-aos="fade-down" data-aos-duration="2000" id="pricing">
     <div class="clientcont">
@@ -757,37 +861,37 @@ On 26th January 2024, we celebrated a significant milestone as Mr. Dileepchandra
                 </div>
             </div>
         </div>
-        <h2>Our Valuable Members</h2>
+        <!-- <h2>Our Valuable Members</h2>
         <div class="other-team">
             <div class="other-team-img-container">
-                <!-- <div class="other-team-img" style="background-image: url(./Assets/team/shamsad.jpg);">
+                <!- - <div class="other-team-img" style="background-image: url(./Assets/team/shamsad.jpg);">
                         <div><h3>Mohamed Shamsad M</h3>
                             <p>Technology Strategist</p>
                         </div>
-                    </div> -->
+                    </div> - ->
             </div>
-                <!-- <div class="other-team-img-container">
+                <!- - <div class="other-team-img-container">
                     <div class="other-team-img" style="background-image: url(./Assets/team/sakeer.jpg);">
                         <div><h3>Sakeer Shamsudheen</h3>
                             <p>Business Development Associate</p>
                         </div>
                     </div>
-                </div> -->
+                </div> - ->
                 <div class="other-team-img-container">
                     <div class="other-team-img" style="background-image: url(./Assets/team/navaneeth.jpg);">
                         <div><h3>Navaneeth</h3>
-                            <!-- <p>Business Development Associate</p> -->
+                            <!- - <p>Business Development Associate</p> - ->
                         </div>
                     </div>
                 </div>
                 <div class="other-team-img-container">
                     <div class="other-team-img" style="background-image: url(./Assets/team/hussain.jpg);">
                         <div><h3>Mohammed Hussain A</h3>
-                            <!-- <p>Developer / Business Associate</p> -->
+                            <!- - <p>Developer / Business Associate</p> - ->
                         </div>
                     </div>
                 </div>
-                </div>
+                </div> -->
                 
 
         </div>
